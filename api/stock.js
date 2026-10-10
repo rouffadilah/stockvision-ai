@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     if (payload.chart?.error) return res.status(502).json({ error: payload.chart.error.description || "Market data provider error" });
     const result = payload.chart?.result?.[0];
     if (!result) return res.status(404).json({ error: "No historical data found for this symbol" });
-    return res.status(200).json(result);
+    return res.status(200).json(payload);
   } catch (error) {
     return res.status(502).json({ error: "Unable to retrieve historical market data" });
   }
