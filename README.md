@@ -1,4 +1,4 @@
-# StockVision AI
+# StockVision
 
 A responsive stock-market analytics dashboard built with HTML, CSS, and JavaScript. Interface language: Indonesian and English.
 
